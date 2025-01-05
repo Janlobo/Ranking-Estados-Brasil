@@ -25,5 +25,9 @@ O projeto foi criado e desenvolvido por Jan Lobo
 <li> Tratamento dos dados recebidos (ETL) usando o recurso de etapas e programação em <b>Query M</b> </li>
 <li> Criação de 81 medidas com <b>DAX</b> para uso nas classificações e geração de gráficos</li>
 <li> Modelo de dados utilizando 24 tabelas com esquema estrela </li>
+<br>
 
+### Caso queira uma cópia do arquivo .PBIX por favor, entre em contato antes. 
+<br>
 
+## Obrigado!
