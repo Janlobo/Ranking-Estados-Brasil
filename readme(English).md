@@ -25,3 +25,9 @@ Skills and resources used in the project
 <li> Data processing (ETL) using step transformations and <b>Query M</b> programming</li> 
 <li> Creation of 81 measures using <b>DAX</b> for classifications and generating visualizations</li> 
 <li> Data model built with 24 tables using a star schema</li>
+<br>
+
+### If you would like a copy of the .PBIX file, please contact me beforehand.
+<br>
+
+## Thank you!
