@@ -19,3 +19,10 @@ Classification of Brazilian States based on the main national indicators. / Clas
 # Onde os usuários podem obter ajuda com seu projeto
 O projeto foi criado e desenvolvido por Jan Lobo
 
+# Habilidades e recursos utilizados no projeto
+<li> Acesso as bases de dados através de <b> API </b> e arquivos em excel disponibilizadas pelas entidades em seus endereços digitais</li>
+<li> Utilização de <b>Parâmetros</b> para seleção de ano mais recente</li>
+<li> Tratamento dos dados recebidos (ETL) usando o recurso de etapas e programação em <b>Query M</b> </li>
+<li> Criação de 81 medidas com <b>DAX</b> para uso nas classificações e geração de gráficos</li>
+<li> Modelo de dados utilizando 24 tabelas com esquema estrela </li>
+
