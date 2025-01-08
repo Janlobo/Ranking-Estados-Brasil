@@ -1,0 +1,33 @@
+-- Calcula a média de X (Data)
+VAR MediaData =
+    AVERAGEX ( ALLSELECTED ( 'SOC_IDHM_por_UF'[Ano] ), 'SOC_IDHM_por_UF'[Ano] ) -- Calcula a média de Y (Valor)
+
+VAR MediaValor =
+    AVERAGEX (
+        ALLSELECTED ( 'SOC_IDHM_por_UF'[IDHM_UF] ),
+        'SOC_IDHM_por_UF'[IDHM_UF]
+    ) 
+
+-- Calcula a inclinação (slope) da linha de tendência
+VAR Slope =
+    DIVIDE (
+        SUMX (
+            ALLSELECTED ( 'SOC_IDHM_por_UF' ),
+            ( 'SOC_IDHM_por_UF'[Ano] - MediaData ) * ( 'SOC_IDHM_por_UF'[IDHM_UF] - MediaValor )
+        ),
+        SUMX (
+            ALLSELECTED ( 'SOC_IDHM_por_UF' ),
+            ( 'SOC_IDHM_por_UF'[Ano] - MediaData ) ^ 2
+        )
+    ) 
+
+-- Calcula a interseção (intercept) da linha de tendência
+VAR Intercept = MediaValor - Slope * MediaData
+
+RETURN
+
+-- Calcula o valor da linha de tendência para cada ponto de dados
+    Intercept
+        + Slope * SELECTEDVALUE ( 'SOC_IDHM_por_UF'[Ano] )
+
+-- OBS: colocar (-) para quando for quanto maior pior e (+) quando for quanto maior melhor
