@@ -1,5 +1,6 @@
 <img width="1541" alt="Indication of the Unemployment Rate Trend" src="https://github.com/user-attachments/assets/dd115887-052e-42a9-81ae-c2ff8288c4c7" />
 <br>
+
 # Ranking-Estados-Brasil
 Classification of Brazilian States based on the main national indicators. / Classificação dos estados do Brasil baseados em 12 indicadores. 
 
